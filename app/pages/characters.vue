@@ -1,11 +1,14 @@
 <template>
-  <nav>example Header</nav>
+  <main>characters</main>
 </template>
 
 <script setup>
 // Imports
 
 // Component Options
+useHead({
+  title: "Gears of War - Characters",
+});
 
 // Props and Emits
 

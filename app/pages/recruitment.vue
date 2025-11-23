@@ -1,5 +1,5 @@
 <template>
-  <main>content</main>
+  <main>recruitment</main>
 </template>
 
 <script setup>
@@ -7,7 +7,7 @@
 
 // Component Options
 useHead({
-  title: "Gears of War",
+  title: "Gears of War - Recruitment",
 });
 
 // Props and Emits

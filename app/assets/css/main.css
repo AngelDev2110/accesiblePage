@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Coalition";
+  src: url("../fonts/Coalition.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply bg-bg text-text;
+}
+main {
+  height: 200rem;
+}
