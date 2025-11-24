@@ -11,3 +11,46 @@ body {
 main {
   height: 200rem;
 }
+.gears-link {
+  @apply transition-all duration-200 relative tracking-wider;
+
+  text-shadow: 0 0 4px rgba(255, 0, 0, 0.3);
+}
+.gears-link:hover {
+  color: theme("colors.primary");
+  transform: translateY(-1px);
+}
+.gears-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: theme("colors.primary");
+  transition: width 0.25s ease;
+}
+.gears-link:hover::after {
+  width: 100%;
+}
+.gears-link.active {
+  @apply text-primary;
+}
+.gears-link.active::after {
+  width: 100%;
+}
+
+.bg-tech {
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 2px,
+      transparent 4px
+    );
+}

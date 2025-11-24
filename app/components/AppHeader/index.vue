@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header bg-tech">
     <img src="/logo.png" class="logo" alt="Gears Logo" />
 
     <nav class="nav">
@@ -17,9 +17,8 @@
 
 <script setup>
 // Imports
-import { useRouter } from "vue-router";
-import { computed } from "vue";
 import { NAVIGATION_LINKS } from "./constants";
+import { useLinkClasses } from "@/composables/useLinkClasses";
 
 // Component Options
 
@@ -28,18 +27,15 @@ import { NAVIGATION_LINKS } from "./constants";
 // Composition API Helpers
 
 // Reactive Variables
-const router = useRouter();
 
 // Computed Properties
-const currentRoute = computed(() => router.currentRoute.value.path);
 
 // Watchers
 
 // Lifecycle Hooks
 
 // Methods
-const getLinkClasses = (path) =>
-  path === currentRoute.value ? "link active" : "link";
+const { getLinkClasses } = useLinkClasses();
 </script>
 
 <style scoped>
@@ -49,18 +45,6 @@ const getLinkClasses = (path) =>
     bg-bg border-b border-primary overflow-hidden;
 
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-  background-image: linear-gradient(
-      135deg,
-      rgba(255, 0, 0, 0.08) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.02) 0px,
-      rgba(255, 255, 255, 0.02) 1px,
-      transparent 2px,
-      transparent 4px
-    );
 }
 .logo {
   @apply h-10 w-auto;
@@ -69,33 +53,5 @@ const getLinkClasses = (path) =>
 }
 .nav {
   @apply ml-6 flex items-center gap-6 text-text font-coalition;
-}
-.link {
-  @apply transition-all duration-200 relative tracking-wider;
-
-  text-shadow: 0 0 4px rgba(255, 0, 0, 0.3);
-}
-.link:hover {
-  color: theme("colors.primary");
-  transform: translateY(-1px);
-}
-.link::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: theme("colors.primary");
-  transition: width 0.25s ease;
-}
-.link:hover::after {
-  width: 100%;
-}
-.link.active {
-  @apply text-primary;
-}
-.link.active::after {
-  width: 100%;
 }
 </style>
