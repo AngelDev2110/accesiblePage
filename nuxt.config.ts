@@ -22,6 +22,7 @@ export default defineNuxtConfig({
           },
           fontFamily: {
             coalition: ["Coalition", "sans-serif"],
+            anton: ["Anton", "sans-serif"],
           },
         },
       },

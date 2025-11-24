@@ -8,13 +8,21 @@
 body {
   @apply bg-bg text-text;
 }
-main {
-  height: 200rem;
+
+h1,
+h2 {
+  @apply font-coalition text-primary tracking-[2px];
 }
+
+p {
+  @apply font-anton tracking-[1px];
+}
+
 .gears-link {
   @apply transition-all duration-200 relative tracking-wider;
-
-  text-shadow: 0 0 4px rgba(255, 0, 0, 0.3);
+}
+.gears-link__not-animated {
+  @apply text-primary underline;
 }
 .gears-link:hover {
   color: theme("colors.primary");
