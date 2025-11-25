@@ -42,6 +42,23 @@
       class="mb-10"
       alt="James dominic fighting a drone"
     />
+
+    <h2 class="text-4xl mb-4">The Day Everything Changed</h2>
+
+    <p class="mb-4 text-lg">
+      The Emergence Day invasion marked the moment when humanity was dragged
+      into its darkest war. Without warning, the Locust Horde erupted from
+      beneath the cities of Sera, overwhelming defenses and shattering the world
+      in a matter of hours.
+    </p>
+
+    <p class="mb-4 text-lg">
+      This video introduces the first brutal moments of the Locust assault, a
+      reminder of the sacrifice, chaos, and resilience that forged the heroes of
+      Delta Squad and defined the fate of an entire planet.
+    </p>
+
+    <Video />
   </main>
 </template>
 
