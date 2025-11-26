@@ -36,15 +36,13 @@
     >
       <h3
         id="form-heading"
-        class="text-3xl font-coalition tracking-widest text-[#d0d3d6] mb-6 text-center"
+        class="font-coalition tracking-widest text-[#d0d3d6] text-center"
       >
         COG Enlistment Form
       </h3>
 
-      <label class="inline-block space-y-2 w-[45%]" for="name">
-        <span
-          class="font-coalition tracking-wide text-lg text-[#a7abb0] uppercase"
-        >
+      <label class="inline-block space-y-2 w-[100%] sm:w-[45%]" for="name">
+        <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Full Name
         </span>
         <input
@@ -58,10 +56,11 @@
         />
       </label>
 
-      <label class="inline-block space-y-2 w-[45%] ml-[10%]" for="email">
-        <span
-          class="font-coalition tracking-wide text-lg text-[#a7abb0] uppercase"
-        >
+      <label
+        class="inline-block space-y-2 w-[100%] sm:w-[45%] sm:ml-[10%]"
+        for="email"
+      >
+        <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Email
         </span>
         <input
@@ -76,9 +75,7 @@
       </label>
 
       <label class="block space-y-2" for="message">
-        <span
-          class="font-coalition tracking-wide text-lg text-[#a7abb0] uppercase"
-        >
+        <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Why do you want to join the COG?
         </span>
         <textarea
@@ -94,7 +91,7 @@
 
       <button
         type="submit"
-        class="w-full py-3 bg-bg text-white rounded-lg font-coalition tracking-widest text-xl shadow-lg hover:bg-primary hover:shadow-[0_0_20px_rgba(255,0,0,0.4)] active:scale-95 transition uppercase"
+        class="w-full py-3 bg-bg text-white rounded-lg font-coalition tracking-widest shadow-lg hover:bg-primary hover:shadow-[0_0_20px_rgba(255,0,0,0.4)] active:scale-95 transition uppercase"
       >
         ENLIST NOW
       </button>

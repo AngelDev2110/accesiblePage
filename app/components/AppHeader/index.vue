@@ -52,6 +52,6 @@ const { getLinkClasses } = useLinkClasses();
   filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4));
 }
 .nav {
-  @apply ml-6 flex items-center gap-6 text-text font-coalition;
+  @apply ml-6 flex items-center gap-6 text-text font-coalition overflow-x-auto;
 }
 </style>
