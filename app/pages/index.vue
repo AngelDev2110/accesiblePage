@@ -1,15 +1,15 @@
 <template>
-  <main class="py-12 px-6 max-w-5xl mx-auto leading-relaxed">
-    <h1 class="text-5xl mb-6">Welcome to the Gears of War Universe</h1>
+  <main>
+    <h1>Welcome to the Gears of War Universe</h1>
 
-    <p class="mb-4 text-lg">
+    <p>
       Step into a world where humanity fights for survival against overwhelming
       odds. This site is a tribute to the Gears of War saga, created with
       accessibility in mind so that every visitor can explore the stories,
       characters, and legacy of the Coalition of Ordered Governments.
     </p>
 
-    <p class="mb-4 text-lg">
+    <p>
       Across this page, you’ll find accessible content, high-contrast visuals,
       descriptive text for assistive technologies, and optional captions and
       audio descriptions in all multimedia. Whether you're a long-time Gear or a
@@ -18,16 +18,16 @@
 
     <img src="/mainImg.webp" class="mb-10" alt="" />
 
-    <h2 class="text-4xl mb-4">About the War Against the Locust</h2>
+    <h2>About the War Against the Locust</h2>
 
-    <p class="mb-4 text-lg">
+    <p>
       For decades, the people of Sera have battled the Locust Horde, a
       relentless subterranean enemy that emerged on Emergence Day. Through
       heart, grit, and sacrifice, humanity pushed back against extinction thanks
       to the brave soldiers of Delta Squad.
     </p>
 
-    <p class="mb-4 text-lg">
+    <p>
       Our mission is to offer an accessible overview of the world of Gears of
       War. This includes lore, character backgrounds, and insights into the
       brutal conflict that shaped Sera’s history. If you want to know more about
@@ -43,16 +43,16 @@
       alt="James dominic fighting a drone"
     />
 
-    <h2 class="text-4xl mb-4">The Day Everything Changed</h2>
+    <h2>The Day Everything Changed</h2>
 
-    <p class="mb-4 text-lg">
+    <p>
       The Emergence Day invasion marked the moment when humanity was dragged
       into its darkest war. Without warning, the Locust Horde erupted from
       beneath the cities of Sera, overwhelming defenses and shattering the world
       in a matter of hours.
     </p>
 
-    <p class="mb-4 text-lg">
+    <p>
       This video introduces the first brutal moments of the Locust assault, a
       reminder of the sacrifice, chaos, and resilience that forged the heroes of
       Delta Squad and defined the fate of an entire planet.
