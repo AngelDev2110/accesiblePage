@@ -1,9 +1,5 @@
 <template>
-  <video
-    controls
-    aria-describedby="video-desc"
-    class="w-full rounded-lg shadow-xl"
-  >
+  <video controls class="w-full rounded-lg shadow-xl">
     <source src="/gow.mp4" type="video/mp4" />
 
     <track
