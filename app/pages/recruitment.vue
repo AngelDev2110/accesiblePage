@@ -41,13 +41,12 @@
         COG Enlistment Form
       </h3>
 
-      <label class="inline-block space-y-2 w-[100%] sm:w-[45%]" for="name">
+      <label class="inline-block space-y-2 w-[100%] sm:w-[45%]">
         <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Full Name
         </span>
         <input
           v-model="name"
-          id="name"
           name="name"
           type="text"
           placeholder="Enter your full name"
@@ -56,16 +55,12 @@
         />
       </label>
 
-      <label
-        class="inline-block space-y-2 w-[100%] sm:w-[45%] sm:ml-[10%]"
-        for="email"
-      >
+      <label class="inline-block space-y-2 w-[100%] sm:w-[45%] sm:ml-[10%]">
         <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Email
         </span>
         <input
           v-model="email"
-          id="email"
           name="email"
           type="email"
           placeholder="example@cog.gov"
@@ -74,13 +69,12 @@
         />
       </label>
 
-      <label class="block space-y-2" for="message">
+      <label class="block space-y-2">
         <span class="font-coalition tracking-wide text-[#a7abb0] uppercase">
           Why do you want to join the COG?
         </span>
         <textarea
           v-model="message"
-          id="message"
           name="message"
           rows="5"
           placeholder="Share your motivation for joining the Coalition..."
