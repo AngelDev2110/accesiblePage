@@ -13,6 +13,16 @@
       not only the brutality of war but also the friendships, losses, and
       resilience that defined Delta Squad.
     </p>
+    <p>
+      You’ll be able to know more about their backgrounds, motivations, and the
+      impact they had on the war effort in this other
+      <a
+        class="gears-link__not-animated"
+        href="https://gearsofwar.fandom.com/wiki/Gears_of_War_Wiki"
+        target="_blank"
+        >gears of war wiki</a
+      >.
+    </p>
 
     <h2>Marcus Fenix</h2>
 
