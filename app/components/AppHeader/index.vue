@@ -2,7 +2,7 @@
   <header class="header bg-tech">
     <img src="/logo.png" class="logo" alt="Gears Logo" />
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main Navigation">
       <ul>
         <li v-for="link in NAVIGATION_LINKS" :key="link.path">
           <a :class="getLinkClasses(link.path)" :href="link.path">
