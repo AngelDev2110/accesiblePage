@@ -1,19 +1,6 @@
 <template>
   <footer class="footer bg-tech">
-    <div class="footer-content">
-      <nav class="footer-nav">
-        <a
-          v-for="link in NAVIGATION_LINKS"
-          :key="link.path"
-          :href="link.path"
-          :class="getLinkClasses(link.path)"
-        >
-          {{ link.name }}
-        </a>
-      </nav>
-    </div>
-
-    <div class="footer-bottom">
+    <div class="footer-rights">
       © {{ new Date().getFullYear() }} Gears. All rights reserved.
     </div>
   </footer>
@@ -49,21 +36,7 @@ const { getLinkClasses } = useLinkClasses();
   clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.footer-content {
-  @apply max-w-6xl mx-auto px-4
-         flex flex-col md:flex-row justify-center items-center;
-}
-
-.footer-nav {
-  @apply flex flex-col md:flex-row gap-3 md:gap-6 text-sm 
-         font-coalition tracking-wide;
-}
-
-.footer-link {
-  @apply transition-all relative;
-}
-
-.footer-bottom {
+.footer-rights {
   @apply text-center text-xs opacity-60 mt-6 tracking-wide text-text;
 }
 </style>

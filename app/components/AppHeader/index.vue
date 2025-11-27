@@ -3,14 +3,13 @@
     <img src="/logo.png" class="logo" alt="Gears Logo" />
 
     <nav class="nav">
-      <a
-        v-for="link in NAVIGATION_LINKS"
-        :key="link.path"
-        :class="getLinkClasses(link.path)"
-        :href="link.path"
-      >
-        {{ link.name }}
-      </a>
+      <ul>
+        <li v-for="link in NAVIGATION_LINKS" :key="link.path">
+          <a :class="getLinkClasses(link.path)" :href="link.path">
+            {{ link.name }}
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
@@ -52,6 +51,10 @@ const { getLinkClasses } = useLinkClasses();
   filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4));
 }
 .nav {
-  @apply ml-6 flex items-center gap-6 text-text font-coalition overflow-x-auto;
+  @apply ml-6 text-text font-coalition overflow-x-auto;
+}
+
+.nav ul {
+  @apply flex items-center gap-6;
 }
 </style>
